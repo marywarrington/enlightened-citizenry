@@ -2,7 +2,9 @@
     Introduced on: {{bill.introduced_on}} <br>
     Chamber: {{bill.chamber}} <br>
     Sponsor: {{bill.sponsor.first_name}} {{bill.sponsor.last_name}} <br>
-    Committee: <br>
+    Committee:
+    <!-- this might require calling another API using the bill.committee_ids -->
+    <br>
     <a href="{{bill.urls.govtrack}}" target="_blank">Link to Latest Version</a><br>
 
 {{else}}
