@@ -10,6 +10,9 @@ export default Ember.Route.extend({
     },
     billsLookup() {
       this.transitionTo('bills-results');
+    },
+    upcomingBillsLookup(params) {
+      this.transitionTo('upcoming-bills-results', params);
     }
   }
 });

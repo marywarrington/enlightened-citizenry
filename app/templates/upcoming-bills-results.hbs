@@ -1,0 +1,9 @@
+<h1>Upcoming Bills</h1>
+
+
+  {{#each model as |bill|}}
+    {{bill.name}}
+    <br>
+    {{bill-details bill=bill}}
+  {{/each}}
+<!-- <h2>There are no upcoming votes!</h2> -->
