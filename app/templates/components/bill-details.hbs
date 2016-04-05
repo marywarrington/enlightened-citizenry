@@ -1,0 +1,10 @@
+{{#if billDetails}}
+    Introduced on: {{bill.introduced_on}} <br>
+    Chamber: {{bill.chamber}} <br>
+    Sponsor: {{bill.sponsor.first_name}} {{bill.sponsor.last_name}} <br>
+    Committee: <br>
+    <a href="{{bill.urls.govtrack}}" target="_blank">Link to Latest Version</a><br>
+
+{{else}}
+  <button {{action 'showBillDetails'}}>Show Bill Details</button>
+{{/if}}

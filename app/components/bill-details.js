@@ -1,9 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  billDetails: false,
   actions: {
-    billsLookup() {
-      this.sendAction('billsLookup');
+    showBillDetails() {
+      this.set('billDetails', true);
     }
   }
 });

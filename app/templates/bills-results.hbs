@@ -4,6 +4,7 @@
 {{#each model as |bill|}}
   {{bill.official_title}}
   <br>
-  Introduced on {{bill.introduced_on}}.
+  {{bill-details bill=bill}}
   <hr>
+
 {{/each}}
